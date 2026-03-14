@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Développeur Web — Applications fiables & sécurisées</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- NAV -->
+  <nav id="mainNav">
+    <a href="#" class="nav-logo">dev.portfolio</a>
+    <ul class="nav-center">
+      <li><a href="#services"     data-section="services">Services</a></li>
+      <li><a href="#technologies" data-section="technologies">Technologies</a></li>
+      <li><a href="#securite"     data-section="securite">Sécurité</a></li>
+      <li><a href="#methode"      data-section="methode">Méthode</a></li>
+      <li><a href="#contact"      data-section="contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun"  viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services"     class="mob-link">Services</a>
+    <a href="#technologies" class="mob-link">Technologies</a>
+    <a href="#securite"     class="mob-link">Sécurité</a>
+    <a href="#methode"      class="mob-link">Méthode</a>
+    <a href="#contact"      class="mob-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content reveal">
+      <div class="hero-eyebrow">Développeur Web</div>
+      <h1>Applications <em>fiables,</em><br>performantes<br>&amp; sécurisées</h1>
+      <p class="hero-desc">
+        Je transforme des besoins métiers en solutions techniques simples, efficaces et durables — en mettant la fiabilité et la sécurité au cœur de chaque projet.
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary">
+          Découvrir mon travail
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">
+          Me contacter
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <div class="terminal-card card-main">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-comment">// profil.json</div>
+          <div><span class="t-key">"role"</span>: <span class="t-str">"Développeur Web"</span>,</div>
+          <div><span class="t-key">"focus"</span>: [</div>
+          <div>&nbsp;&nbsp;<span class="t-str">"Fiabilité"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="t-str">"Performance"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="t-str">"Sécurité"</span></div>
+          <div>],</div>
+          <div><span class="t-key">"stack"</span>: [</div>
+          <div>&nbsp;&nbsp;<span class="t-str">"PHP"</span>, <span class="t-str">"Symfony"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="t-str">"SQL"</span>, <span class="t-str">"HTML/CSS"</span></div>
+          <div>],</div>
+          <div><span class="t-key">"status"</span>: <span class="t-val">available</span></div>
+        </div>
+      </div>
+      <div class="terminal-card card-sec">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-comment">// sécurité</div>
+          <div><span class="t-key">CVE</span>: <span class="t-val">protégé</span></div>
+          <div><span class="t-key">Auth</span>: <span class="t-val">sécurisée</span></div>
+          <div><span class="t-key">Data</span>: <span class="t-val">chiffrée</span></div>
+          <div><span class="t-key">Score</span>: <span class="t-num">A+</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <hr class="divider-full" />
+  <section id="services">
+    <div class="section-label reveal">Ce que je fais</div>
+    <h2 class="reveal">Des solutions pour<br>gagner en efficacité</h2>
+    <p class="section-intro reveal">Je développe des applications web et des outils numériques qui permettent aux organisations de gagner du temps, automatiser certaines tâches et sécuriser leurs données.</p>
+    <div class="services-grid stagger">
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <h3>Applications web</h3>
+        <p>Développement d'applications web sur mesure, robustes et adaptées à vos besoins métiers.</p>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🗄️</div>
+        <h3>Bases de données</h3>
+        <p>Gestion, optimisation et structuration de bases de données pour des performances maximales.</p>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛠️</div>
+        <h3>Outils internes</h3>
+        <p>Création d'outils sur mesure pour les équipes afin de simplifier les processus quotidiens.</p>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>Automatisation</h3>
+        <p>Automatisation de traitements de données pour éliminer les tâches répétitives à faible valeur ajoutée.</p>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3>Analyse &amp; correction</h3>
+        <p>Identification et résolution de problèmes techniques pour améliorer la stabilité de vos systèmes.</p>
+        <span class="service-arrow">→</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES -->
+  <hr class="divider-full" />
+  <section id="technologies">
+    <div class="section-label reveal">Stack technique</div>
+    <h2 class="reveal">Mes technologies<br>principales</h2>
+    <p class="section-intro reveal">Des technologies éprouvées, utilisées dans de nombreuses applications professionnelles pour construire des solutions robustes et évolutives.</p>
+    <div class="tech-grid stagger">
+      <div class="tech-item">
+        <span class="tech-badge">PHP</span>
+        <span class="tech-desc">Développement backend — logique métier, APIs, traitement serveur</span>
+      </div>
+      <div class="tech-item">
+        <span class="tech-badge">Symfony</span>
+        <span class="tech-desc">Framework structurant les applications pour plus de sécurité et de maintenabilité</span>
+      </div>
+      <div class="tech-item">
+        <span class="tech-badge">SQL</span>
+        <span class="tech-desc">Gestion et optimisation des bases de données relationnelles</span>
+      </div>
+      <div class="tech-item">
+        <span class="tech-badge">HTML/CSS</span>
+        <span class="tech-desc">Interfaces web accessibles, claires et adaptées à tous les appareils</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITE -->
+  <hr class="divider-full" />
+  <section id="securite">
+    <div class="section-label reveal">Priorité n°1</div>
+    <h2 class="reveal">La sécurité au cœur<br>du développement</h2>
+    <div class="security-highlight reveal">
+      <p style="color:var(--muted);max-width:62ch;font-size:.95rem;">
+        Aujourd'hui, la sécurité informatique est un enjeu majeur pour toutes les organisations. C'est pourquoi j'intègre dès le développement des bonnes pratiques pour protéger vos applications et vos données.
+      </p>
+      <ul class="security-list">
+        <li>Protection contre les attaques courantes sur les applications web</li>
+        <li>Sécurisation de l'accès aux applications et aux ressources</li>
+        <li>Protection des données sensibles et conformité</li>
+        <li>Amélioration de la fiabilité globale du système</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- METHODE -->
+  <hr class="divider-full" />
+  <section id="methode">
+    <div class="section-label reveal">Approche</div>
+    <h2 class="reveal">Ma façon<br>de travailler</h2>
+    <p class="section-intro reveal">Une approche pragmatique et efficace pour créer des solutions fiables et faciles à maintenir.</p>
+    <div class="steps stagger">
+      <div class="step">
+        <div class="step-num">01 —</div>
+        <h3>Comprendre</h3>
+        <p>Analyser le besoin réel, pas juste la demande de surface.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02 —</div>
+        <h3>Concevoir</h3>
+        <p>Proposer une solution adaptée, simple et évolutive.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03 —</div>
+        <h3>Développer</h3>
+        <p>Écrire un code clair, documenté et sécurisé dès le départ.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04 —</div>
+        <h3>Améliorer</h3>
+        <p>Tester, mesurer et optimiser les performances en continu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <hr class="divider-full" />
+  <section id="contact">
+    <div class="section-label reveal">Travaillons ensemble</div>
+    <h2 class="reveal">Me contacter</h2>
+    <p class="section-intro reveal">Un projet, une question ou une opportunité ? Écrivez-moi directement ou retrouvez-moi sur les réseaux professionnels.</p>
+    <div class="contact-wrapper reveal">
+      <div class="contact-aside">
+        <h3>Retrouvez-moi sur</h3>
+        <p>Disponible pour des missions freelance, des collaborations ou des opportunités en CDI/CDD.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/jean-loic-benos/" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+            <span class="social-link-label">Profil →</span>
+          </a>
+          <a href="https://github.com/bloic" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+            <span class="social-link-label">Code →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Prénom *</label>
+            <input type="text" id="fname" placeholder="Jean" />
+            <span class="field-error" id="err-fname">Ce champ est requis.</span>
+          </div>
+          <div class="form-group">
+            <label for="lname">Nom</label>
+            <input type="text" id="lname" placeholder="Dupont" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="femail">Email *</label>
+          <input type="email" id="femail" placeholder="jean.dupont@email.com" />
+          <span class="field-error" id="err-email">Adresse email invalide.</span>
+        </div>
+        <div class="form-group">
+          <label for="fsubject">Objet</label>
+          <input type="text" id="fsubject" placeholder="Proposition de mission, question..." />
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message *</label>
+          <textarea id="fmessage" placeholder="Décrivez votre projet ou votre demande..."></textarea>
+          <span class="field-error" id="err-message">Ce champ est requis.</span>
+        </div>
+        <button class="btn-primary form-submit" onclick="handleSubmit()">
+          Envoyer le message
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <div class="form-success" id="formSuccess">
+          ✓ &nbsp; Message envoyé — je vous répondrai dans les plus brefs délais.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMING SOON -->
+  <hr class="divider-full" />
+  <section class="coming-soon">
+    <div class="coming-box reveal">
+      <div class="pill">En construction</div>
+      <h2>Bientôt disponible</h2>
+      <p>Ce site est actuellement en cours de création. D'autres contenus seront ajoutés prochainement.</p>
+      <div class="coming-tags">
+        <span class="tag">Projets</span>
+        <span class="tag">Réalisations techniques</span>
+        <span class="tag">Compétences détaillées</span>
+        <span class="tag">Parcours professionnel</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <p>© 2026 — Développeur Web</p>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-dot" title="Disponible"></div>
+    <span class="footer-stack">PHP · Symfony · SQL · HTML/CSS</span>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script>
+    const html = document.documentElement;
+
+    // Theme toggle
+    const saved = localStorage.getItem('theme');
+    if (saved) html.setAttribute('data-theme', saved);
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      if (open) {
+        mobileMenu.style.display = 'flex';
+        requestAnimationFrame(() => mobileMenu.classList.add('open'));
+      } else {
+        mobileMenu.classList.remove('open');
+        setTimeout(() => { mobileMenu.style.display = 'none'; }, 250);
+      }
+    });
+    document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      setTimeout(() => { mobileMenu.style.display = 'none'; }, 250);
+    }));
+
+    // Nav shadow on scroll + scroll-to-top visibility
+    const nav = document.getElementById('mainNav');
+    const scrollBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+      scrollBtn.classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
+
+    scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Scroll spy — active nav link
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-center a[data-section]');
+    const spyObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting)
+          navLinks.forEach(l => l.classList.toggle('active', l.dataset.section === e.target.id));
+      });
+    }, { threshold: 0.35 });
+    sections.forEach(s => spyObs.observe(s));
+
+    // Scroll reveal + stagger
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal, .stagger').forEach(el => revealObs.observe(el));
+
+    // Form inline validation
+    function validate(id, errId, check) {
+      const el = document.getElementById(id);
+      const err = document.getElementById(errId);
+      const ok = check(el.value.trim());
+      el.classList.toggle('error', !ok);
+      err.classList.toggle('show', !ok);
+      return ok;
+    }
+
+    function handleSubmit() {
+      const ok1 = validate('fname',    'err-fname',   v => v.length > 0);
+      const ok2 = validate('femail',   'err-email',   v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+      const ok3 = validate('fmessage', 'err-message', v => v.length > 0);
+      if (!ok1 || !ok2 || !ok3) return;
+      // TODO : connecter à Formspree / EmailJS / votre backend
+      document.getElementById('formSuccess').classList.add('show');
+      document.getElementById('contactForm')
+        .querySelectorAll('input, textarea')
+        .forEach(el => { el.value = ''; el.classList.remove('error'); });
+      document.querySelectorAll('.field-error').forEach(e => e.classList.remove('show'));
+    }
+
+    // Clear errors on typing
+    ['fname','femail','fmessage'].forEach(id => {
+      document.getElementById(id)?.addEventListener('input', function() {
+        this.classList.remove('error');
+      });
+    });
+  </script>
+</body>
+</html>
